@@ -1,0 +1,15 @@
+# defining a function : to count the ferequency of the word "Emma"
+def count_engineering (statement):
+    print ("Statement:", statement)
+
+# counter for the number of occurence
+    count = 0
+
+# iterate through characters in the string up to the second-to-last character
+    for n in range (len(statement)-1):
+        count += statement [n: n + 4] == 'Engineering'
+    return count
+
+# printing the result
+count = count_engineering ("Engineering enthusiasts embark on an exciting journey, tackling challenging engineering projects. They apply engineering principles to devise innovative engineering solutions, showcasing the essence of engineering excellence. Through continuous engineering analysis and iterative engineering processes, they hone their engineering skills, contributing to the ever-evolving landscape of engineering advancements." )
+print ("Engineering apepeared ", count, "times")
