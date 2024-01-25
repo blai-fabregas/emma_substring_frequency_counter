@@ -6,13 +6,12 @@ def count_engineering (statement):
     count = 0
 
 # converting the statement for case-insensitive matching
-statement_lower = statement.lower()
+    statement_lower = statement.lower()
 
 # iterate through characters in the string up to the second-to-last character
-for n in range (len(statement_lower)-len('engineering')+1):
-    count += statement_lower [n: n + len ('engineering')] == 'engineering'
-
-return count
+    for n in range (len(statement_lower)-len('engineering')+1):
+        count += statement_lower [n: n + len ('engineering')] == 'engineering'
+    return count
 
 # printing the result
 count = count_engineering ("Engineering enthusiasts embark on an exciting journey, tackling challenging engineering projects. They apply engineering principles to devise innovative engineering solutions, showcasing the essence of engineering excellence. Through continuous engineering analysis and iterative engineering processes, they hone their engineering skills, contributing to the ever-evolving landscape of engineering advancements." )
